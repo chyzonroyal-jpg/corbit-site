@@ -1,0 +1,17 @@
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --white: #FFFFFF;
+    --purple: #4A1A7C;
+    --purple-mid: #6B2FA0;
+    --purple-light: #F3EEF9;
+    --purple-border: #C9A8E8;
+    --black: #1A1020;
+    --black-soft: #2E1E40;
+    --red: #CC1133;
+    --font-display: 'Cormorant Garamond', serif;
+    --font-body: 'DM Sans', sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-body); background: var(--white); color: var(--black); overflow-x: hidden; }
