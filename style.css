@@ -1,17 +1,133 @@
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-<style>
-  :root {
-    --white: #FFFFFF;
-    --purple: #4A1A7C;
-    --purple-mid: #6B2FA0;
-    --purple-light: #F3EEF9;
-    --purple-border: #C9A8E8;
-    --black: #1A1020;
-    --black-soft: #2E1E40;
-    --red: #CC1133;
-    --font-display: 'Cormorant Garamond', serif;
-    --font-body: 'DM Sans', sans-serif;
-  }
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body { font-family: var(--font-body); background: var(--white); color: var(--black); overflow-x: hidden; }
+:root {
+    --primary: #4A148C; /* Your Brand Deep Purple */
+    --accent: #D32F2F;  /* Your Red Accent */
+    --bg-light: #F3E5F5; /* Light Purple Background */
+    --text-dark: #212121;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 20px;
+}
+
+/* --- CAROUSEL STRUCTURE --- */
+.carousel-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: 20px 0;
+}
+
+/* Hide scrollbars but keep functionality */
+.carousel-container::-webkit-scrollbar { display: none; }
+.carousel-container { -ms-overflow-style: none; scrollbar-width: none; }
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    padding: 0 10px;
+}
+
+/* --- CARD STYLING --- */
+.service-card {
+    flex: 0 0 280px; /* Width of each card */
+    background: #ffffff;
+    border: 2px solid var(--bg-light);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+}
+
+.card-num {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--bg-light);
+    text-align: right;
+    margin: 0;
+}
+
+.card-title {
+    color: var(--primary);
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+.card-desc {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.card-btn {
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    transition: background 0.2s;
+}
+
+.card-btn:hover { 
+    background-color: #310A63; 
+}
+
+/* --- INTEGRATED CORPORATE FOOTER --- */
+.code-footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 2px solid var(--bg-light);
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.8;
+    background-color: #FAFAFA;
+    border-radius: 12px;
+}
+
+.footer-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.footer-contacts {
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+.footer-contacts a {
+    color: var(--primary);
+    text-decoration: none;
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.footer-contacts a:hover {
+    text-decoration: underline;
+}
+
+/* Desktop Grid Adaptation */
+@media (min-width: 900px) {
+    .carousel-track { justify-content: center; }
+    .service-card { flex: 0 1 270px; }
+}
