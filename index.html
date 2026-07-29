@@ -143,7 +143,7 @@
   }
 
   .service-card {
-    flex: 0 0 290px; /* Forces cards side-by-side to allow horizontal swiping */
+    flex: 0 0 290px; /* Forces cards side-by-side to swipe nicely on mobile */
     background: var(--white); border: 1.5px solid var(--purple-border);
     border-radius: 8px; padding: 32px 28px;
     transition: box-shadow 0.25s, transform 0.2s, border-color 0.2s;
@@ -187,7 +187,7 @@
   .form-group label { font-size: 14px; font-weight: 600; color: var(--purple); }
   .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px; border: 1.5px solid var(--purple-border); border-radius: 6px; font-family: var(--font-body); font-size: 14px; }
   .form-group textarea { height: 120px; resize: none; }
-  .form-submit-btn { background: var(--purple); color: var(--white); border: none; padding: 14px; border-radius: 6px; font-size: 15px; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+  .form-submit-btn { background: var(--purple); color: var(--white) !important; border: none; padding: 14px; border-radius: 6px; font-size: 15px; font-weight: 600; cursor: pointer; transition: background 0.2s; display: block; text-align: center; text-decoration: none; }
   .form-submit-btn:hover { background: var(--purple-mid); }
 
   /* CORPORATE FOOTER */
@@ -207,4 +207,3 @@
   .footer-brand-logo { width: 70px; height: auto; object-fit: contain; }
   .footer-brand-title { font-family: var(--font-display); font-size: 18px; color: var(--white); letter-spacing: 1px; font-weight: 700; }
   .footer-legal { border-top: 1px solid rgba(255,255,255,0.1); width: 100%; padding-top: 20px; margin-top: 10px; font-size: 13px; }
-Use code with caution..footer-contacts-line a { color: var(--white); text-decoration: none;
