@@ -1,13 +1,13 @@
 {
-  "name": "SmartRx NG",
-  "short_name": "SmartRx",
-  "start_url": ".",
+  "name": "Chizix Orbit Digital Innovations LTD",
+  "short_name": "Chizix Orbit",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#14467C",
   "icons": [
     {
-      "src": "smartrx.png",
+      "src": "logo.png",
       "sizes": "512x512",
       "type": "image/png"
     }
